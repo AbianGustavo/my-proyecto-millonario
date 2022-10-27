@@ -27,4 +27,10 @@ Un tag sirve como una rama firmada que se mantiene inalterable. Es una cadena ar
 
 ### ¿Cuando estamos trabajando con ramas, cual es su fin, y sentido en organizaciones pequeñas/medianas/grandes? Justifica tu respuesta.
 
+Las ramas las usamos para llevar un mejor control del código. Se trata de una bifurcación del estado del código que crea un nuevo camino de cara a la evolución del código, en paralelo a otras ramas que se puedan generar. Las ramas nos pueden servir para la creación de una funcionalidad que queramos integrar en un programa y para la cual no queremos que la rama principal se vea afectada. Esta función experimental se puede realizar en una rama independiente, de modo que, aunque tardemos varios días o semanas en terminarla, no afecte a la producción del código que tenemos en la rama principal y que permanecerá estable.
+
+A la hora de aplicarlo en un proyecto el trabajo con ramas resulta muy cómodo, porque es posible que todas las ramas creadas evolucionen al mismo tiempo, pudiendo el desarrollador pasar de una rama a otra en cualquier momento según las necesidades del proyecto. Si en un momento dado el trabajo con una rama nos ha resultado interesante, útil y se encuentra estable, entonces podemos fusionar ramas para incorporar las modificaciones del proyecto en su rama principal.
+
 ### ¿Se tendrían que producir conflictos en esta acción? [Si/No] Justifica tu respuesta.
+
+No se tendría que producir ningún conflicto dado que se ha hecho correctamente el comando merge junto el nombre de la rama que queremos fusionar y se ha hecho estando situados en la rama que queremos usar como base.
