@@ -7,10 +7,15 @@
 - **git checkout:** Nos permite cambiar entre ramas.
 - **git annotate:** Nos permite ver las diferencias entre unos commits / archivos.
 - **git merge:** Fusiona dos ramas en las que estemos trabajando
+- **git tag:** Nos permite etiquetar puntos específicos en el historial de un repositorio como importantes.
+- **git pull:** Nos permite traer los cambios realizados en la nube hasta nuestro repositorio local.
+- **git diff:** Nos permite llevar a cabo una función para establecer las diferencias en los orígenes de datos de Git. Dichos orígenes de datos pueden ser confirmaciones, ramas y archivos, entre otras posibilidades.
+- **git clone:** Nos permite copiar un repositorio existente en nuestro directorio local.
+- **git fetch:** Nos permite recuperrar la última información de los metadatos del original (aunque no hace ninguna transferencia de archivos. Es más bien como comprobar si hay algún cambio disponible).
 
 ### ¿Si has clonado el repostorio que parte del comando anterior puedo omitir? Justifica tu respuesta.
 
-Se puede omitir "origin master" dado que la rama por defecto es main.
+Se puede omitir "origin master" dado que esa es la rama que está por defecto.
 
 ### ¿Se deben de subir el fichero y el directorio privado al repositorio si se encuentra añadido al fichero .gitignore. [Si/No]?  Justifica tu respuesta.
 
@@ -22,15 +27,14 @@ Al realizar un git add, añadiremos dichos elementos al control de git para más
 
 ### ¿Qué es un tag sobre un repositorio git, en nuestro caso Github? Justifica tu respuesta.
 
-
 Un tag sirve como una rama firmada que se mantiene inalterable. Es una cadena arbitraria que apunta a un commit específico. Puede decirse que un tag es un nombre que puedes usar para marcar un punto específico en la historia de un repositorio.
 
 ### ¿Cuando estamos trabajando con ramas, cual es su fin, y sentido en organizaciones pequeñas/medianas/grandes? Justifica tu respuesta.
 
-Las ramas las usamos para llevar un mejor control del código. Se trata de una bifurcación del estado del código que crea un nuevo camino de cara a la evolución del código, en paralelo a otras ramas que se puedan generar. Las ramas nos pueden servir para la creación de una funcionalidad que queramos integrar en un programa y para la cual no queremos que la rama principal se vea afectada. Esta función experimental se puede realizar en una rama independiente, de modo que, aunque tardemos varios días o semanas en terminarla, no afecte a la producción del código que tenemos en la rama principal y que permanecerá estable.
+Las ramas las usamos para llevar un mejor control del código. Se trata de una bifurcación del estado del código que crea un nuevo camino de cara a la evolución del código, en paralelo a otras ramas que se puedan generar. Las ramas nos pueden servir para la creación de una funcionalidad que queramos integrar en un programa y para la cual no queremos que la rama principal se vea afectada. 
 
 A la hora de aplicarlo en un proyecto el trabajo con ramas resulta muy cómodo, porque es posible que todas las ramas creadas evolucionen al mismo tiempo, pudiendo el desarrollador pasar de una rama a otra en cualquier momento según las necesidades del proyecto. Si en un momento dado el trabajo con una rama nos ha resultado interesante, útil y se encuentra estable, entonces podemos fusionar ramas para incorporar las modificaciones del proyecto en su rama principal.
 
 ### ¿Se tendrían que producir conflictos en esta acción? [Si/No] Justifica tu respuesta.
 
-No se tendría que producir ningún conflicto dado que se ha hecho correctamente el comando merge junto el nombre de la rama que queremos fusionar y se ha hecho estando situados en la rama que queremos usar como base.
+No se tendría que producir ningún conflicto dado que se ha hecho correctamente el comando merge junto el nombre de la rama que queremos fusionar y se ha hecho estando situados en la rama que queremos usar como base. Tambien debido a que no se hicieron cambios cuando se ejecutó dicha acción.
